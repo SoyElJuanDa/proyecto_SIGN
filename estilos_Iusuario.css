@@ -1,0 +1,96 @@
+body{
+    background: lightblue;
+}
+
+#contenido{
+    text-align: center;
+    display: grid;
+    width: 80%;
+
+}
+.cabecera{
+display: grid;
+grid-template-columns: repeat(12,1fr);
+width: 80%;
+grid-template-rows: none;
+max-height: 150px;
+}
+.tabla{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr;
+}
+.datos{
+    grid-column-start: 1;
+    grid-column-end: 9;
+    margin-right: 5px;
+}
+.enviar{
+    grid-column-start: 9;
+    grid-column-end: -1;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.logo{
+    grid-column-end: 3;
+    height: 40%;
+}
+
+#bienvenida{
+    background-color: lightgreen;
+    border-radius: 15%; 
+}
+
+.inputs::placeholder{
+    color: black;
+}
+.actual{
+    color: black;
+}
+.actual:hover{
+    background-color: green;
+    color: white;
+    
+}
+.indice{
+    list-style: none;
+}
+.indice li {
+    position: relative;
+    display: inline-block;
+}
+.indice li:hover ul{
+    display: block;
+}
+.indice ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+.indice ul li a{
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.indice ul li a:hover{
+    background-color: green;
+    color: white;
+}
+.indice li a{
+    text-decoration: none;
+    padding: 5px;
+}
+@media screen and (max-width: 599px) {
+    .datos,.enviar{
+        grid-column: 1/12;
+    }
+    .logo{
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+    
+}
+
+    

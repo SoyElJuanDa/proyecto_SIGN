@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interfaz usuario</title>
+    <link rel="stylesheet" href="estilos_Iusuario.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="cabecera">
+        <img src="../maquetacion prototipos/sign_logo.png" alt="logotipo" class="logo">
+    </div>
+    <br>
+    <section id="contenido" class="container grey lighten-4">
+        <div class="row">
+            <div class="col s1 m1 l1 xl1">
+
+            </div>
+            <h4 id="bienvenida" class="col s10 m10 l10 xl10">bienvenido usuario</h4>
+            <div class="col s1 m1 l1 xl1">
+
+            </div>
+        </div>
+            <br>
+            <ul class="indice">
+                <li>
+                    <a class="actual primero">reporte de novedades</a>
+                    <ul>
+                        <li>
+                            <a href="interfaz_usuario_enviados.html" class="actual">reportes enviados</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="tabla">
+                <table class="stripped datos">
+                    
+                     <tr>
+                        <th >
+                            <h5 >ubicacion</h5>
+                        </th>
+                        <th >
+                            <h5>descripcion</h5>
+                        </th>
+                    </tr>   
+                    
+                    <tbody>
+                        <tr>
+                            <td >
+                                <input type="text" placeholder="ingrese la ubicacion de la novedad" class="inputs">
+                            </td>
+                            <td >
+                                <input type="text" placeholder="ingrese una descripcion de lo ocurrido" class="inputs" >
+                            </td>
+                        </tr> 
+                    </tbody>
+                       
+                    
+                </table>
+                <div class="enviar">
+                    <button class="btn waves-effect waves-light btn-large"  type="submit" name="action">enviar
+                        <i class="material-icons right">send</i>
+                      </button>
+                </div>
+                
+            </div>
+    </section>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body{
+    background: lightblue;
+    text-align: center;
+    
+}
+.cabecera{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 80%;
+    grid-template-rows: none;
+    max-height: 150px;
+}
+.contenedor{
+    
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: white;
+    align-items: center;
+
+}
+.tabla{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(3,1fr);
+        
+       
+}
+.tabla th{
+    border: 1px solid rgb(233, 228, 228);
+    padding: 5px 5vw 5px 5vw;
+    color: white;
+    background-color: black;
+}
+.tabla td{
+    border: 1px solid black;
+}
+.logo{
+    grid-column-end: 3;
+    height: 40%;
+}
+
+.datos{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin-top: 15px;
+}
+/*menu */
+.actual{
+    color: black;
+}
+.actual:hover{
+    background-color: green;
+    color: white;
+    
+}
+.indice{
+    list-style: none;
+    grid-row: 1;
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+.indice li {
+    position: relative;
+    display: inline-block;
+}
+.indice li:hover ul{
+    display: block;
+}
+.indice ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+.indice ul li a{
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.indice ul li a:hover{
+    background-color: green;
+    color: white;
+}
+.indice li a{
+    text-decoration: none;
+    padding: 5px;
+}
+/*responsive*/
+@media screen and (max-width: 599px) {
+    .datos{
+       
+        grid-column-start: 2;
+        grid-column-end: 5;
+        margin-top: 15px;
+    }
+    .logo{
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+    .actual{
+        font-size: larger;
+    }
+    .tabla th{
+        padding: 5px 5px 5px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .contenedor{
+        width: 85%;
+    }
+}

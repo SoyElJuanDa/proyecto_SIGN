@@ -1,0 +1,64 @@
+body {
+background-color: lightskyblue;
+text-align: center;
+font-weight: bold;
+}
+#logo{
+    height: 25%;
+    width: 40%;
+}
+
+#ingreso_usuario,#contra{
+    width: 20%;
+}
+#ingreso_usuario::placeholder, #contra::placeholder{
+    color: white;
+}
+
+@media screen and (max-width: 480px){
+    #logo{
+        height: 40%;
+        width: 50%;
+    }
+    #ingreso_usuario,#contra{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    #logo{
+        height: 40%;
+        width: 50%;
+    }
+    #ingreso_usuario,#contra{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    #logo{
+        height: 40%;
+        width: 50%;
+    }
+    #ingreso_usuario,#contra{
+        width: 35%;
+    }
+    
+}
+@media screen and (max-width: 900px) and (min-width:769px){
+    #logo{
+        height: 40%;
+        width: 50%;
+    }
+    #ingreso_usuario,#contra{
+        width: 30%;
+    }
+    
+}
+@media screen and (max-width: 1170px) and (min-width:901px){
+    #logo{
+        height: 40%;
+        width: 50%;
+    }
+    
+}

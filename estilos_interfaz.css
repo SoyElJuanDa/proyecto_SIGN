@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#principal{
+    position: relative;
+    left: 4.5%;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 7%;
+}
+#titulo{
+    background-color: lightblue;
+    width: 50%;
+    position: relative;
+    left: 10%;
+    display: inline-block;
+}
+table{
+    width: 100%;
+}
+th{
+    width: 25%;
+}
+.fila, .columna{
+    background-color: lightblue;
+    border: black 3px dotted;
+}
+#dudas{
+    background-color: lightblue;
+    font-size: 23px;
+    color: white;
+    border-radius: 50%;
+    width: 7%;
+    display: inline-block;
+    position: relative;
+    left: 20%;
+}
+@media screen and (max-width: 412px){
+    h2{
+        font-size: small;
+    }
+    #dudas{
+        width: 10%;
+        left: 17%;
+    }
+    #question{
+        font-size: 19px;
+    }
+    
+}
+@media screen and (max-width: 534px){
+    h2{
+        font-size: small;
+    }
+    #dudas{
+        width: 10%;
+        left: 17%;
+    }
+    #question{
+        font-size: 19px;
+    }
+    
+}
